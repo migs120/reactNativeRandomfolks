@@ -9,9 +9,9 @@ import Home from './home'
 class App extends React.Component {
                                     render() {
                                                 return (
-                                                          <View style={styles.appContainer}>
-                                                              <Home />
-                                                          </View>
+                                                        <View style={styles.appContainer}>
+                                                            <Home />
+                                                        </View>
                                                         );
                                             }
                                     }
