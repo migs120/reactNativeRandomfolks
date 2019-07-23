@@ -5,6 +5,7 @@ import {
           ActivityIndicator,
           StyleSheet
         } from "react-native";
+import UserList from "./user-list";
 
 class Home extends React.Component {
                                     state = {
@@ -28,13 +29,17 @@ class Home extends React.Component {
                                                           noScroll={true}
                                                           style={styles.container}
                                                         >
-
-                                                        <ActivityIndicator
-                                                              style={[styles.centering, styles.gray]}
-                                                              color="#ff8179"
-                                                              size="large"
-                                                            />
-
+                                                        {
+                                                          this.state.loading ? (
+                                                                                <ActivityIndicator
+                                                                                      style={[styles.centering, styles.gray]}
+                                                                                      color="#ff8179"
+                                                                                      size="large"
+                                                                                    />
+                                                                              ) : (
+                                                                                    <UserList users={this.state.users} />
+                                                                                  )
+                                                        }
                                                         </ScrollView>
                                                       );
                                               }
