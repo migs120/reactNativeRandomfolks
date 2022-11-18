@@ -5,14 +5,14 @@
   "main": "./App.js",
   "dependencies": {
     "expo": "^33.0.7",
-    "expo-cli": "^3.0.2",
+    "expo-cli": "^6.0.8",
     "g": "^2.0.1",
     "react": "^16.8.6",
     "react-art": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-native": "^0.60.4",
     "react-native-web": "^0.11.5",
-    "react-scripts": "3.0.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start-web": "react-scripts start",
